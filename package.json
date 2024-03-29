@@ -1,5 +1,5 @@
 {
-  "name": "arc-text",
+  "name": "arc-text-js",
   "version": "1.0.0",
   "description": "",
   "main": "src/index.js",
@@ -12,5 +12,10 @@
   ],
   "author": "qwer_wei.qi",
   "license": "ISC",
-  "type": "module"
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/qwerUser/arc-text.git"
+  },
+  "homepage": "https://github.com/wannabewayno/arctxt/blob/master/README.md"
 }

@@ -16,10 +16,9 @@ export const createArtElement = (
     fontSize = 14,
     color = '#333',
     clockwise = true,
-    hasBg = true,
+    hasBg = false,
     backgroundColor = '#409EFF',
     className = 'arc-text-bg',
-    width = 50,
     handleClick = () => { console.log('handle-click') }
   }
 ) => {
@@ -80,7 +79,7 @@ export const createArtElement = (
   // element.style.position = 'relative';
   if (hasBg) {
     const endDeg = clockwise ? (startDeg - textDeg * len + oneTextDeg * 2) : (startDeg + textDeg * len);
-    createArcTextBg(element, { startDeg: startDeg + (clockwise ? oneTextDeg * 2.5 : 0), endDeg, r, width, clockwise, backgroundColor, className, handleClick })
+    createArcTextBg(element, { startDeg: startDeg + (clockwise ? oneTextDeg * 2.5 : 0), endDeg, r, width: fontSizeNum + 8, clockwise, backgroundColor, className, handleClick })
   }
   element.appendChild(div);
 }
